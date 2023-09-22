@@ -7,36 +7,41 @@
     <body>
         <div class="calculator">
             <div class="calc_body">
-                <div class="display">
+                <div class="display" id="display">
 
                 </div>
                 <div class="button_all">                    
                     <div class="buttons">
-                        <button id="one">1</button>
-                        <button id="row1">2</button>
-                        <button id="row1">3</button>
-                        <button id="row1">+</button>
+                        <button onclick="numbers(this)" id="one">1</button>
+                        <button onclick="numbers(this)" id="two">2</button>
+                        <button onclick="numbers(this)" id="three">3</button>
+                        <button onclick="numbers(this)" id="plus">+</button>
                     </div>
                     <div class="buttons">
-                        <button id="row2">4</button>
-                        <button id="row2">5</button>
-                        <button id="row2">6</button>
-                        <button id="row2">-</button>
+                        <button onclick="numbers(this)" id="row2">4</button>
+                        <button onclick="numbers(this)" id="row2">5</button>
+                        <button onclick="numbers(this)" id="row2">6</button>
+                        <button onclick="numbers(this)" id="row2">-</button>
                     </div>
                     <div class="buttons">
-                        <button id="row3">7</button>
-                        <button id="row3">8</button>
-                        <button id="row3">9</button>
-                        <button id="row4">/</button>
+                        <button onclick="numbers(this)" id="row3">7</button>
+                        <button onclick="numbers(this)" id="row3">8</button>
+                        <button onclick="numbers(this)" id="row3">9</button>
+                        <button onclick="numbers(this)" id="row4">/</button>
                     </div>
                     <div class="buttons">
-                        <button id="row4">0</button>
-                        <button id="row4">X</button>
-                        <button id="row4">⌫</button>
-                        <button id="row4">=</button>
+                        <button onclick="numbers(this)" id="row4">0</button>
+                        <button onclick="numbers(this)" id="row4">X</button>
+                        <button onclick="numbers(this)" id="row4">⌫</button>
+                        <button onclick="numbers(this)" id="row4">=</button>
                     </div>
                 </div>
             </div>
-        </div>
+        </div>        
+        <script>
+            function numbers(num){
+                display.textContent = num.textContent
+            }
+        </script>
     </body>
 </html>
